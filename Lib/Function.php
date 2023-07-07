@@ -14,8 +14,13 @@ function url_post(string $name = ''):string
     else return "0";
 }
 
-function is_login(){
+function is_login():bool
+{
     if(isset($_SESSION['login']) && $_SESSION['login'] == "1") return true;
     else return false;
 }
 
+function template_view(string $name = ''):string
+{
+    return include(__DIR__ .'/Template/'.$name);
+}
