@@ -1,6 +1,6 @@
 <?php
 
-namespace "Boot";
+namespace Boot;
 
 class App{
     function __construct($url = '') {

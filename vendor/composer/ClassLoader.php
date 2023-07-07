@@ -568,5 +568,8 @@ class ClassLoader
  */
 function includeFile($file)
 {
+    print_r("<pre>");
+    print_r($file);
+    print_r("</pre>");
     include $file;
 }
