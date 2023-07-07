@@ -1,15 +1,14 @@
 <?php
-define('SERVER', 'localhost');
-define('USER', 'root');
-define('PASS', '');
-define('DBNAME', 'test');
+
+
+
 
 class DBCLass {
     private $mysqli;
     private static $instance;
     protected function __construct()
 	{
-        $this->mysqli = new mysqli("localhost", "root", "", "test");
+        $this->mysqli = new mysqli("localhost", "root", "", "light");
         if ($this->mysqli->connect_errno) {
             printf("Не удалось подключиться: %s\n", $mysqli->connect_error);
             exit();
